@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -16,14 +17,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("LP Generator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>
+                        @{
+                            if (Request.IsAuthenticated)
+                            {
+                                @Html.ActionLink("Logout", "Logout", "Account")
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Login", "Login", "Account")
+                            }
+                        }
+                    </li>
+                    <li>
+                        @{
+                            if (Request.IsAuthenticated)
+                            {
+                                <a href="#">@HttpContext.Current.User.Identity.Name</a>
+                            }
+                        }
+                    </li>
+
                 </ul>
+                
             </div>
         </div>
     </div>
@@ -31,7 +54,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - LP Generator</p>
         </footer>
     </div>
 

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailAds", "EmailAds\EmailAds.csproj", "{BA989F17-05FB-48A7-B980-1B62C236EBBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LP.Services", "LP.Services\LP.Services.csproj", "{955EF408-542C-45C3-B6A0-2A650F53DA9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA989F17-05FB-48A7-B980-1B62C236EBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA989F17-05FB-48A7-B980-1B62C236EBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA989F17-05FB-48A7-B980-1B62C236EBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955EF408-542C-45C3-B6A0-2A650F53DA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955EF408-542C-45C3-B6A0-2A650F53DA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955EF408-542C-45C3-B6A0-2A650F53DA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955EF408-542C-45C3-B6A0-2A650F53DA9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
